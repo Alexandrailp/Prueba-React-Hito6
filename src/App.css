@@ -1,0 +1,85 @@
+HTML, body {
+    margin: 0;
+    background-color: #212529;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #222;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+.hero {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.hero > div {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1,
+.hero p {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    margin: auto;
+    max-width: 400px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.pizzas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+.main-content {
+    min-height: calc(100vh - 80px - 60px); 
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    background-color: #212529; 
+    margin: 0;
+    padding: 20px;
+}
