@@ -7,9 +7,11 @@ Proyecto desarrollado en React para el curso de Desafío Latam.
 Aplicación web de una pizzería que permite:
 
 - Visualizar pizzas desde una API
-- Ver el detalle de una pizza
 - Navegar entre distintas vistas con React Router
-- Simular un carrito de compras
+- Agregar pizzas al carrito desde Home
+- Manejar el carrito de compras con Context API
+- Mostrar el total del carrito en el Navbar
+- Aumentar y disminuir productos desde el carrito
 - Acceder a páginas de login, registro y perfil
 
 ## 🛠 Tecnologías
@@ -17,6 +19,7 @@ Aplicación web de una pizzería que permite:
 ### Frontend
 - React
 - React Router DOM
+- Context API
 - Bootstrap
 - Fetch API
 
@@ -29,20 +32,27 @@ Aplicación web de una pizzería que permite:
 ```bash
 npm install
 npm run dev
+```
 
 ## 🔌 Backend
 
 Este proyecto utiliza un backend de apoyo (Node + Express) para servir las pizzas.
 
 Pasos para levantar el backend
-</> Bash
+
+```bash
 npm install
 npm start
+```
 
-El servidor se ejecuta en:
+## El servidor se ejecuta en:
 
+```bash
 http://localhost:5000
+```
 
-📡 Endpoints utilizados
+## 📡 Endpoints utilizados
+```bash
 GET http://localhost:5000/api/pizzas
 GET http://localhost:5000/api/pizzas/p001
+```
